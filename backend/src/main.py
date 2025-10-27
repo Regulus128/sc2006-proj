@@ -44,3 +44,4 @@ def get_geojson():
 # Routers
 from .routers.api_router import api_router  # noqa: E402
 app.include_router(api_router)
+

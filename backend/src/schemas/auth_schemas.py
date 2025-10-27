@@ -6,3 +6,4 @@ class LoginRequest(BaseModel):
 
 class LoginResponse(BaseModel):
     ok: bool
+

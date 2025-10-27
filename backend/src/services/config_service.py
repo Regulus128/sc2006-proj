@@ -9,3 +9,4 @@ def load_config(path: Path) -> KernelConfig:
         return KernelConfig.model_validate_json(path.read_text(encoding="utf-8"))
     except Exception:
         return KernelConfig()
+

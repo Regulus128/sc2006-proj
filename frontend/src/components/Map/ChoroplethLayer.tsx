@@ -9,3 +9,5 @@ export default function ChoroplethLayer({ data }: { data: any }){
   }
   return <GeoJSON data={data} style={style as any} />
 }
+
+

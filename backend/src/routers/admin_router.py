@@ -13,3 +13,4 @@ def list_snapshots():
 @router.post("/snapshots/{snapshot_id}/restore")
 def restore_snapshot(snapshot_id: str):
     raise HTTPException(status_code=501, detail="Not implemented yet")
+

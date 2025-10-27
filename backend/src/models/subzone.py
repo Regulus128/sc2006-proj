@@ -6,3 +6,4 @@ class SubzoneSummary(BaseModel):
     dem: float | None = None
     sup: float | None = None
     acc: float | None = None
+

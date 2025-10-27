@@ -5,7 +5,7 @@ import json
 router = APIRouter()
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
-OUT_PATH = BASE_DIR / "content" / "out" / "hawker_opportunity.geojson"
+OUT_PATH = BASE_DIR / "content"/"out"/ "hawker_opportunity.geojson"
 
 @router.get("/")
 def list_subzones():
@@ -20,3 +20,4 @@ def list_subzones():
         return {"count": len(names), "subzones": sorted(set(names))}
     except Exception:
         return {"count": 0, "subzones": []}
+

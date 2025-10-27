@@ -14,3 +14,4 @@ def put_config(cfg: KernelConfig):
     global _current
     _current = cfg
     return {"ok": True}
+

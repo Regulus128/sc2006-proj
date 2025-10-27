@@ -5,3 +5,4 @@ class User(BaseModel):
     email: EmailStr
     hashed_password: str
     is_admin: bool = False
+

@@ -3,3 +3,5 @@ export async function fetchOpportunityGeoJSON(){
   if(!resp.ok) throw new Error('Failed to load geojson')
   return await resp.json()
 }
+
+

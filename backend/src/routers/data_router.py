@@ -12,3 +12,4 @@ def opportunity_geojson():
     if not OUT_PATH.exists():
         raise HTTPException(status_code=404, detail="GeoJSON not found in content/out/")
     return FileResponse(str(OUT_PATH), media_type="application/geo+json")
+
