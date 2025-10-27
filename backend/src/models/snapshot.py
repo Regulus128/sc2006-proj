@@ -5,3 +5,4 @@ class Snapshot(BaseModel):
     created_at: str
     notes: str | None = None
 
+

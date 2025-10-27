@@ -5,3 +5,4 @@ class SubzoneListResponse(BaseModel):
     count: int
     subzones: List[str]
 
+

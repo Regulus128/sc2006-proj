@@ -10,3 +10,4 @@ def load_config(path: Path) -> KernelConfig:
     except Exception:
         return KernelConfig()
 
+

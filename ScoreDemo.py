@@ -9,7 +9,7 @@ PATH_MRT      = "content/LTAMRTStationExitGEOJSON.geojson"
 PATH_HAWKER   = "content/HawkerCentresGEOJSON.geojson"
 PATH_POP      = "content/ResidentPopulationbyPlanningAreaSubzoneofResidenceAgeGroupandSexCensusofPopulation2020.csv"
 
-BUS_GPKG  = "content/out/bus_stops.gpkg"
+BUS_GPKG  = "content/bus_stops.geojson"
 BUS_LAYER = "bus_stops"
 
 

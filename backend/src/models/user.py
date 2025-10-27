@@ -6,3 +6,4 @@ class User(BaseModel):
     hashed_password: str
     is_admin: bool = False
 
+

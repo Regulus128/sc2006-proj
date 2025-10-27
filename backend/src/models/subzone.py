@@ -7,3 +7,4 @@ class SubzoneSummary(BaseModel):
     sup: float | None = None
     acc: float | None = None
 
+

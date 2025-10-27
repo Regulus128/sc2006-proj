@@ -1,7 +1,5 @@
-export async function fetchOpportunityGeoJSON(){
-  const resp = await fetch('http://127.0.0.1:8000/data/opportunity.geojson')
-  if(!resp.ok) throw new Error('Failed to load geojson')
-  return await resp.json()
+export async function fetchOpportunityGeoJSON() {
+  const r = await fetch('/data/opportunity.geojson')
+  if (!r.ok) throw new Error('Failed to load geojson')
+  return r.json()
 }
-
-

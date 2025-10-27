@@ -13,3 +13,4 @@ class KernelConfig(BaseModel):
     beta_MRT: float = 1.0
     beta_BUS: float = 1.0
 
+

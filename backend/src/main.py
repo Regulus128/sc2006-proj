@@ -6,16 +6,20 @@ from fastapi.staticfiles import StaticFiles
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 CONTENT_DIR = BASE_DIR / "content"
-OUT_PATH = CONTENT_DIR / "out" / "hawker_opportunity.geojson"
+OUT_PATH = CONTENT_DIR / "out" / "hawker_opportunities_ver2.geojson"
 
 app = FastAPI(title="Hawker Opportunity API")
 
-# CORS (dev): allow Vite default ports
+# CORS (dev): allow Vite default ports explicitly
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173", "*"],
-    allow_credentials=True,
-    allow_methods=["*"],
+    allow_origins=[
+        "http://127.0.0.1:5173",
+        "http://localhost:5173",
+    ],
+    allow_origin_regex=r"^http://(127\.0\.0\.1|localhost):\d+$",
+    allow_credentials=False,
+    allow_methods=["GET", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -44,4 +48,5 @@ def get_geojson():
 # Routers
 from .routers.api_router import api_router  # noqa: E402
 app.include_router(api_router)
+
 

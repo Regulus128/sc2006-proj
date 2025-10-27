@@ -5,3 +5,4 @@ from ..models.snapshot import Snapshot
 def list_snapshots(out_dir: Path) -> List[Snapshot]:
     return []
 
+

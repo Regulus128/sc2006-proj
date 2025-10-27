@@ -14,3 +14,4 @@ def logout():
 def register():
     raise HTTPException(status_code=501, detail="Not implemented yet")
 
+
